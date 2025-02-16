@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\RabbitMQ\\RabbitMQ\\RabbitMQ.csproj": {}
+    "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/RabbitMQ.csproj": {}
   },
   "projects": {
-    "D:\\C#\\RabbitMQ\\RabbitMQ\\RabbitMQ.csproj": {
+    "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/RabbitMQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\RabbitMQ\\RabbitMQ\\RabbitMQ.csproj",
+        "projectUniqueName": "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/RabbitMQ.csproj",
         "projectName": "RabbitMQ",
-        "projectPath": "D:\\C#\\RabbitMQ\\RabbitMQ\\RabbitMQ.csproj",
-        "packagesPath": "D:\\.nuge",
-        "outputPath": "D:\\C#\\RabbitMQ\\RabbitMQ\\obj\\",
+        "projectPath": "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/RabbitMQ.csproj",
+        "packagesPath": "/Users/phunn/.nuget/packages/",
+        "outputPath": "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/phunn/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "NBomber": {
+              "target": "Package",
+              "version": "[5.8.1, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -55,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

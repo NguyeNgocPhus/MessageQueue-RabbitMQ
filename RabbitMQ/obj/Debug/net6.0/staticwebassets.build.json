@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "CE7RmF81r7BGeudlzeB0TQyhj9TJjojjswinBG7y3UY=",
+  "Hash": "KRpYb8VQFmBKC5EVG9DQ3sWdyqVAYZq1Z3Ug7CWPYcU=",
   "Source": "RabbitMQ",
   "BasePath": "_content/RabbitMQ",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "RabbitMQ/wwwroot",
+      "Source": "RabbitMQ",
+      "ContentRoot": "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/wwwroot/",
+      "BasePath": "_content/RabbitMQ",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/wwwroot/index.html",
+      "SourceId": "RabbitMQ",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/phunn/Documents/Code/MessageQueue-RabbitMQ/RabbitMQ/wwwroot/",
+      "BasePath": "_content/RabbitMQ",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
 }

@@ -13,9 +13,24 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<RabbitMQConfiguration>(
     builder.Configuration.GetSection("RabbitMQ"));
-builder.Services.AddSingleton<IEventBus, EventBus>();
-var app = builder.Build();
+builder.Services.AddScoped<IEventBus, EventBus>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
+        {
+            policy.WithOrigins("http://127.0.0.1:5500", "http://localhost:5500")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
+        });
+});
+
+
+
+var app = builder.Build();
+app.UseCors("AllowSpecificOrigin"); 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -23,9 +38,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-var eventBus = app.Services.GetRequiredService<IEventBus>();
-eventBus.SubscribeDynamic<InitializeUserEventHandler>("InitializeUserEvent");
-
+// var eventBus = app.Services.GetRequiredService<IEventBus>();
+// // eventBus.SubscribeDynamic<InitializeUserEventHandler>("InitializeUserEvent");
+// //
 
 app.UseHttpsRedirection();
 
